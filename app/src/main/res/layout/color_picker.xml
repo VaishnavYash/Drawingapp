@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/colorPickerMain"
+    android:background="#CC000000"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:padding="50px"
+        android:background="#333333"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnColorPreview"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="200px" />
+        <LinearLayout
+            android:gravity="center"
+            android:background="#555555"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="#"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/strColor"
+                android:text="FFFFFFFF"
+                android:textSize="20sp"
+                android:maxLength="8"
+                android:textColor="#FFFFFF"
+                android:background="#555555"
+                android:padding="5sp"
+                android:imeOptions="actionDone"
+                android:textAlignment="center"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/colorA"
+        android:padding="30px"
+        android:progress="255"
+        android:progressDrawable="@drawable/seekbar_a_progress"
+        android:thumb="@drawable/seekbar_a_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/colorR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30px"
+            android:progress="255"
+            android:progressDrawable="@drawable/seekbar_r_progress"
+            android:thumb="@drawable/seekbar_r_thumb" />
+
+        <SeekBar
+        android:id="@+id/colorG"
+        android:padding="30px"
+        android:progress="255"
+        android:progressDrawable="@drawable/seekbar_g_progress"
+        android:thumb="@drawable/seekbar_g_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/colorB"
+        android:padding="30px"
+        android:progress="255"
+        android:progressDrawable="@drawable/seekbar_b_progress"
+        android:thumb="@drawable/seekbar_b_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/colorOkBtn"
+            android:background="#EEEEEE"
+            android:text="Apply"
+            android:layout_weight="0.5"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
